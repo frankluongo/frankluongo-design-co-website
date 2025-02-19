@@ -14,7 +14,13 @@ import Textarea from "../../components/Textarea/Textarea.astro";
         Fill out the form below to send me a message and I'll respond ASAP!
       </p>
     </header>
-    <Form id="contact-form" method="POST" action="/">
+    <Form
+      id="contact-form"
+      name="contact"
+      method="POST"
+      action="/"
+      data-netlify="true"
+    >
       <Input
         label="name"
         type="text"
