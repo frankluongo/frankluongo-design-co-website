@@ -1,0 +1,65 @@
+---
+import Container from "../Container/Container.astro";
+import "./Hero.css";
+---
+
+<section class="hero">
+  <Container class="hero:container">
+    <div class="hero:background-elements">
+      <svg
+        class="hero:foreground-element"
+        width="1355"
+        height="563"
+        viewBox="0 0 1355 563"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M1354.28 298.165C1360.39 362.585 1303.79 457.893 1274.72 497.495C1309.13 536.531 1351.12 624.15 1243.82 662.337C1109.7 710.071 871.916 555.025 927.183 405.099C982.45 255.174 636.058 171.05 716.827 88.2841C797.596 5.51781 1243.16 55.5603 1191.72 163.713C1140.27 271.866 1346.65 217.64 1354.28 298.165Z"
+          fill="var(--theme-surface-color--foreground)"></path>
+        <path
+          d="M433.926 537.267C550.328 657.923 507.05 756.809 470.86 791.17C460.315 751.816 410.398 659.171 295.088 603.422C150.95 533.736 -109.627 457.717 -19.7114 156.956C70.2045 -143.805 521.701 64.4307 403.376 155.115C285.052 245.8 288.423 386.448 433.926 537.267Z"
+          fill="var(--theme-surface-color--foreground)"></path>
+      </svg>
+      <svg
+        class="hero:background-element"
+        width="1440"
+        height="640"
+        viewBox="0 0 1440 640"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M-87.2899 176.52C-74.8261 102.677 16.9741 13.091 61.3162 -22.4717C34.5511 -76.415 13.8581 -186.939 145.207 -197.488C309.392 -210.674 528.706 33.8692 422.045 184.911C315.385 335.952 677.312 533.745 562.263 602.073C447.213 670.401 -35.7571 481 54.1256 375.511C144.008 270.021 -102.87 268.823 -87.2899 176.52Z"
+          fill="var(--theme-surface-color--background)"></path>
+        <path
+          d="M1012.87 184.911C918.917 15.1688 996.895 -82.4088 1047.63 -109.98C1047.63 -62.8293 1075.67 55.6863 1187.85 152.545C1328.06 273.618 1596.51 436.646 1405.96 745.922C1215.41 1055.2 773.187 687.184 932.579 621.253C1091.97 555.322 1130.32 397.088 1012.87 184.911Z"
+          fill="var(--theme-surface-color--background)"></path>
+      </svg>
+    </div>
+    <div class="hero:container--inner">
+      <header>
+        <h1 class="hero:heading heading">
+          Frank Luongo
+          <small class="hero:heading--small mono"
+            >Software engineer x Graphic Designer</small
+          >
+        </h1>
+      </header>
+      <p class="hero:subheading paragraph--large">
+        I design + build performant, accessible and SEO-friendly website for
+        local businesses, e-commerce stores, foundations and more
+      </p>
+      <footer class="hero:footer">
+        <a
+          class="hero:footer-button"
+          href="mailto:frank@frankluongo.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Let's work together →
+        </a>
+      </footer>
+    </div>
+  </Container>
+</section>

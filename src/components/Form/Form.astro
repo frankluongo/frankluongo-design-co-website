@@ -1,0 +1,9 @@
+---
+const classNames = Astro.props.class || "";
+const rest = Astro.props;
+import "./Form.css";
+---
+
+<form class={`form ${classNames}`} {...rest}>
+  <slot />
+</form>

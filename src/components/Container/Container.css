@@ -1,0 +1,10 @@
+.container {
+  margin-inline: auto;
+  max-width: var(--content-width);
+  padding-inline: var(--padding-inline--outer);
+  width: 100%;
+}
+
+.container--blog {
+  max-width: var(--content-width--blog);
+}

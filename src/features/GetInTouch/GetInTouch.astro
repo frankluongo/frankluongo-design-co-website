@@ -1,0 +1,39 @@
+---
+import Button from "../../components/Button/Button.astro";
+import Container from "../../components/Container/Container.astro";
+import Form from "../../components/Form/Form.astro";
+import Input from "../../components/Input/Input.astro";
+import Textarea from "../../components/Textarea/Textarea.astro";
+---
+
+<section class="wrapper background--tint" id="contact">
+  <Container class="flex:columns flex:columns--large-gap">
+    <header class="flex:columns">
+      <h2 class="heading">Get in touch!</h2>
+      <p class="paragraph--large">
+        Fill out the form below to send me a message and I'll respond ASAP!
+      </p>
+    </header>
+    <Form id="contact-form" method="POST" action="/">
+      <Input
+        label="name"
+        type="text"
+        name="name"
+        placeholder="Your name"
+        required
+      />
+      <Input
+        label="Email Address"
+        type="email"
+        name="email"
+        placeholder="email@address.com"
+        required
+      />
+      <Textarea label="Message" name="message" required />
+      <Button type="submit">Send Your Message →</Button>
+    </Form>
+    <div id="form-message"></div>
+  </Container>
+</section>
+
+<script src="./GetInTouch.js"></script>

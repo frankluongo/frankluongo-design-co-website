@@ -1,0 +1,34 @@
+---
+const classNames = Astro.props.class || "";
+import Email from "../../icons/Email.astro";
+import GitHub from "../../icons/GitHub.astro";
+import Instagram from "../../icons/Instagram.astro";
+import "./Socials.css";
+---
+
+<ul class={`socials:list ${classNames}`}>
+  <li>
+    <a
+      href="//github.com/frankluongo"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Check out my GitHub"><GitHub /></a
+    >
+  </li>
+  <li>
+    <a
+      href="mailto:frank@frankluongo.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Send me an email"><Email /></a
+    >
+  </li>
+  <li>
+    <a
+      href="//www.instagram.com/_frankluongo"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Check out my Instagram"><Instagram /></a
+    >
+  </li>
+</ul>

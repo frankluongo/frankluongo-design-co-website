@@ -1,0 +1,41 @@
+---
+const client = Astro.props.client || "Kira & Suzanna";
+const business = Astro.props.business || "Twin Waves Wellness Center";
+const url = Astro.props.url || "//twinwaveswellness.com";
+const bonusImage = Astro.props.bonusImage || null;
+const image = Astro.props.image || "https://placehold.co/600x400";
+import { Image } from "astro:assets";
+import "./Testimonial.css";
+---
+
+<article class="testimonial">
+  <div class="testimonial:column-image">
+    <figure class="testimonial:image-wrapper">
+      <Image src={image} alt={client} data-bonus-src={bonusImage?.src} />
+      {
+        bonusImage && (
+          <div class="testimonial-image-wrapper:bonus-image">
+            <Image src={bonusImage} alt={client} />
+          </div>
+        )
+      }
+    </figure>
+  </div>
+  <div class="testimonial:text">
+    <p class="testimonial-text:quote">
+      <slot />
+    </p>
+    <footer class="testimonial:footer">
+      <p class="heading paragraph--small">{client}</p>
+      <span class="heading paragraph--small" aria-hidden="true">|</span>
+      <a
+        class="testimonial-footer:link no-underline"
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <p class="heading paragraph--small">{business}</p>
+      </a>
+    </footer>
+  </div>
+</article>

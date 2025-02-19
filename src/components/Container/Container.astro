@@ -1,0 +1,10 @@
+---
+const classNames = Astro.props.class || "";
+const type = Astro.props.type || "default";
+const rest = Astro.props;
+import "./Container.css";
+---
+
+<div class={`container container--${type} ${classNames}`} {...rest}>
+  <slot />
+</div>

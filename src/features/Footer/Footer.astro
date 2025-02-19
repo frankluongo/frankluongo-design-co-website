@@ -1,0 +1,50 @@
+---
+import Container from "../../components/Container/Container.astro";
+import Socials from "../../components/Socials/Socials.astro";
+import "./Footer.css";
+---
+
+<footer class="footer wrapper background--shade">
+  <Container class="footer:container">
+    <div class="footer:column-left">
+      <div class="footer:text-content">
+        <h2 class="heading h3">frank luongo<br />design co.</h2>
+        <p>
+          I'm <strong>Frank Luongo</strong>, an experienced Software Developer
+          and Graphic Designer with a comprehensive skill set encompassing
+          cutting-edge software development and visually compelling graphic
+          design to create transformative digital projects.
+        </p>
+        <p>
+          This website is built using <a
+            href="//astro.build/"
+            target="_blank"
+            rel="noopener noreferrer">Astro</a
+          >, hosted on <a
+            href="//www.netlify.com/"
+            target="_blank"
+            rel="noopener noreferrer">Netlify</a
+          > and typeset in <a
+            href="//regularbolditalic.com/fonts/fatfrank"
+            target="_blank"
+            rel="noopener noreferrer">FatFrank</a
+          >, <a
+            href="//hanken.co/products/hk-grotesk"
+            target="_blank"
+            rel="noopener noreferrer">HK Grotesk</a
+          > and <a
+            href="//www.atipofoundry.com/fonts/silka-mono"
+            target="_blank"
+            rel="noopener noreferrer">Silka Mono</a
+          >.
+        </p>
+      </div>
+    </div>
+    <div class="footer:column-right">
+      <Socials />
+    </div>
+  </Container>
+  <Container class="footer:copyright">
+    <small>&copy; 2025 Frank Luongo Design Co. LLC</small>
+  </Container>
+</footer>

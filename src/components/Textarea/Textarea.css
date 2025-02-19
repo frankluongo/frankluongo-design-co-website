@@ -1,0 +1,16 @@
+.textarea\:label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.textarea {
+  min-height: 2.5rem;
+  padding: 0.5rem;
+
+  color: var(--theme-text-color--default);
+
+  background-color: var(--theme-background-color--tint);
+  border: 1px solid var(--theme-border-color--default);
+  border-radius: 0.25rem;
+}

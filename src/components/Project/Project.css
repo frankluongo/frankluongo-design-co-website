@@ -1,0 +1,36 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap--inner);
+  max-width: 18rem;
+  padding: var(--padding-block--inner) var(--padding-inline--inner);
+  width: 100%;
+
+  background-color: var(--theme-background-color--tint);
+  border: 1px solid var(--theme-border-color--default);
+  border-radius: 0.5rem;
+}
+
+.project\:image-wrapper {
+  position: relative;
+
+  width: 100%;
+
+  aspect-ratio: 16 / 9;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.project\:image-wrapper img {
+  position: absolute;
+  inset: 0;
+
+  height: 100%;
+  width: 100%;
+
+  object-fit: cover;
+}
+
+.project\:title {
+  font-size: 1rem;
+}

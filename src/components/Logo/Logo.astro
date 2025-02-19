@@ -1,0 +1,26 @@
+---
+const Element = Astro.props.Element || "h1";
+import "./Logo.css";
+---
+
+<Element class="logo">
+  <svg
+    class="logo:middleground"
+    width="104"
+    height="26"
+    viewBox="0 0 104 26"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      opacity="0.3"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M105 0V33.4644H-5V4.10548C2.50883 2.03741 10.3122 1.76418 19.0612 3.2858C22.9997 3.97077 27.9176 5.11718 33.4021 6.39564C58.7439 12.303 96.1799 21.0296 104.963 0.0793839C104.974 0.0521936 104.987 0.0257263 105 0Z"
+      fill="var(--theme-logo-middleground-color)"></path>
+  </svg>
+  <span class="logo:text">
+    <span class="logo:line-1">frank luongo</span>
+    <span class="logo:line-2">design co.</span>
+  </span>
+</Element>

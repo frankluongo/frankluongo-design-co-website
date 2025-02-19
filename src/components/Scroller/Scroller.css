@@ -1,0 +1,25 @@
+.scroller\:outer {
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.scroller\:inner {
+  display: flex;
+  gap: var(--gap--outer);
+  width: max-content;
+  max-width: 100%;
+  padding-block: var(--padding-block--inner);
+  padding-inline: var(--padding-inline--inner);
+
+  overflow-x: auto;
+
+  background-color: var(--theme-background-color--default);
+  border: 1px solid var(--theme-border-color--default);
+  border-radius: 0.5rem;
+  cursor: grab;
+}
+
+.scroller\:inner--active {
+  cursor: grabbing;
+}

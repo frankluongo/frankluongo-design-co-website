@@ -1,0 +1,15 @@
+---
+const title = Astro.props.title || "Alicia Stepp Photography";
+const image = Astro.props.image || "https://placehold.co/600x400";
+const url = Astro.props.url || "https://example.com";
+import { Image } from "astro:assets";
+import "./Project.css";
+---
+
+<article class="project">
+  <figure class="project:image-wrapper">
+    <Image src={image} alt={title} />
+  </figure>
+  <h3 class="project:title heading">{title}</h3>
+  <a href={url} target="_blank" rel="noopener noreferrer">View Project</a>
+</article>

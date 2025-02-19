@@ -1,0 +1,9 @@
+---
+const { class: classNames, label, ...rest } = Astro.props;
+import "./Textarea.css";
+---
+
+<label class="textarea:label">
+  <span class="textarea:label-text heading">{label}</span>
+  <textarea class={`textarea ${classNames}`} {...rest}></textarea>
+</label>

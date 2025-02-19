@@ -1,0 +1,60 @@
+---
+import Container from "../../components/Container/Container.astro";
+import Scroller from "../../components/Scroller/Scroller.astro";
+import Testimonial from "../../components/Testimonial/Testimonial.astro";
+
+import Alex from "../../assets/img/alex-capozzolo.jpg";
+import KiraAndSuzanna from "../../assets/img/kira-and-suzanna.jpg";
+import Jon from "../../assets/img/jon-sanborn.jpg";
+import JonBonus from "../../assets/img/jon-easter-egg.jpg";
+---
+
+<section class="wrapper background--tint">
+  <Container class="flex:columns flex:columns--large-gap">
+    <header class="flex:columns">
+      <h2 class="heading">Testimonials from past clients</h2>
+    </header>
+    <Scroller>
+      <Testimonial
+        business="Twin Waves Wellness Center"
+        client="Kira & Suzanna"
+        image={KiraAndSuzanna}
+        url="//twinwaveswellness.com/"
+      >
+        Working with Frank has been a LIFE SAVOR!! Being a small business, it is
+        crucial that our website is not only professional, but user friendly and
+        reflects the personality of the business. We've gotten countless
+        feedback from clients on how our website was what got them to pick us
+        over others in the industry! Frank is not only great at what he does -
+        he is a joy to work with and is ALWAYS on top of it! We know we can rely
+        on Frank to show up and help us with our online presence. We can't
+        recommend him enough!
+      </Testimonial>
+      <Testimonial
+        business="SD House Guys"
+        client="Alex C."
+        image={Alex}
+        url="//sdhouseguys.com/"
+      >
+        We've been working with Frank for over +3 years and it's been great!
+        He's helped us build 2 real estate websites that now generate all of our
+        online leads. The helps he gave us with branding our company, logo, and
+        website were top notch. If you want to stand out from your competition
+        and have a memorable/professional online presence, he's your guy. He's
+        extremely responsive whenever we need help with something.
+      </Testimonial>
+      <Testimonial
+        business="Brotherly Love Real Estate"
+        client="Jon S."
+        image={Jon}
+        bonusImage={JonBonus}
+        url="//brotherlyloveproperties.com/"
+      >
+        Easy to work with, always answers quickly, and solves issues on problems
+        I don't even know exist. We get countless praises on our website,
+        branding, etc, all of which Frank played a huge role in. Highly
+        recommend!
+      </Testimonial>
+    </Scroller>
+  </Container>
+</section>

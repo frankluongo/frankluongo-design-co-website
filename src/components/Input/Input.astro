@@ -1,0 +1,9 @@
+---
+const { class: classNames, label, ...rest } = Astro.props;
+import "./Input.css";
+---
+
+<label class="input:label">
+  <span class="input:label-text heading">{label}</span>
+  <input class={`input ${classNames}`} {...rest} />
+</label>

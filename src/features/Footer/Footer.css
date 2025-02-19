@@ -1,0 +1,25 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap--outer);
+
+  padding-bottom: 8rem;
+}
+
+.footer\:container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap--inner);
+}
+
+.footer\:column-left {
+  flex: 1 0 15rem;
+}
+
+.footer\:text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 38rem;
+}

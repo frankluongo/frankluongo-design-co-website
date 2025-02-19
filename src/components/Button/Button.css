@@ -1,0 +1,33 @@
+.button {
+  --border-radius: 0.5rem;
+
+  --button-background-color: var(--theme-background-color--tint);
+  --button-border-color: var(--theme-call-to-action-color--default);
+  --button-text-color: var(--theme-call-to-action-color--default);
+
+  position: relative;
+
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+
+  color: var(--button-text-color);
+
+  text-decoration: none;
+
+  appearance: none;
+  background-color: var(--button-background-color);
+  border: 1px solid var(--button-border-color);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transform: skewX(-2deg);
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.button:is(:focus, :hover) {
+  --button-background-color: var(--theme-call-to-action-color--default);
+  --button-border-color: var(--theme-call-to-action-color--default);
+  --button-text-color: var(--theme-background-color--tint);
+}

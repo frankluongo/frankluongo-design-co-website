@@ -1,0 +1,13 @@
+#global-website-header {
+  padding-block: var(--padding-block--inner);
+
+  background-color: var(--theme-background-color--default);
+
+  border-bottom: 1px solid var(--theme-border-color--default);
+}
+
+#global-website-header\:content {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}

@@ -1,0 +1,72 @@
+/* GENERAL STYLES: */
+/* ============================================================== */
+#website-navigation\:header {
+  display: flex;
+  padding: var(--padding-inline--inner);
+
+  border-bottom: 1px solid var(--theme-border-color--default);
+}
+
+#website-navigation-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.website-navigation-toggle {
+  margin-left: auto;
+
+  appearance: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.website-navigation\:link {
+  display: block;
+  padding: var(--padding--sm) var(--padding--default);
+}
+
+/* MOBILE-ONLY: */
+/* ============================================================== */
+@media (max-width: 639px) {
+  #website-navigation {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99;
+
+    width: 90%;
+    height: 100%;
+    background-color: var(--theme-background-color--default);
+    border-left: 1px solid var(--theme-border-color--default);
+
+    transform: translate(100%);
+    transition: transform 250ms ease-in-out;
+  }
+
+  #website-navigation.slide-in {
+    transform: translate(0%);
+  }
+
+  #website-navigation[aria-hidden="true"] {
+    display: none;
+  }
+
+  #website-navigation-list {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 640px) {
+  #website-navigation {
+    display: flex;
+    flex: 1;
+  }
+
+  .website-navigation-socials {
+    margin-left: auto;
+  }
+}

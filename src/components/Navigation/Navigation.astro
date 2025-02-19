@@ -1,0 +1,46 @@
+---
+import { NAVIGATION_LINKS } from "../../data/navigation";
+import Logo from "../Logo/Logo.astro";
+import Socials from "../Socials/Socials.astro";
+import "./Navigation.css";
+---
+
+<button
+  aria-expanded="false"
+  aria-controls="website-navigation"
+  class="website-navigation-toggle mobile-only"
+  id="website-navigation-toggle-open"
+  type="button"
+  aria-label="Open website menu"
+  title="Open website menu">🍔</button
+>
+<nav id="website-navigation" aria-hidden="true">
+  <header id="website-navigation\:header" class="mobile-only">
+    <Logo Element="h2" />
+    <button
+      aria-expanded="false"
+      aria-controls="website-navigation"
+      class="website-navigation-toggle"
+      id="website-navigation-toggle-close"
+      type="button"
+      aria-label="Close website menu"
+      title="Close website menu"
+    >
+      ❌
+    </button>
+  </header>
+  <ul id="website-navigation-list">
+    {
+      NAVIGATION_LINKS.map((link) => (
+        <li>
+          <a class="website-navigation:link navigation-link" href={link.path}>
+            {link.title}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+  <Socials class="website-navigation-socials" />
+</nav>
+
+<script src="./Navigation.js"></script>

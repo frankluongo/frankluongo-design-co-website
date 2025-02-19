@@ -1,0 +1,51 @@
+---
+import Container from "../../components/Container/Container.astro";
+import Project from "../../components/Project/Project.astro";
+
+import BLRE from "../../assets/img/image-1.jpg";
+import MNSF from "../../assets/img/image-2.jpg";
+import RENT from "../../assets/img/image-3.jpg";
+import TUFA from "../../assets/img/image-4.jpg";
+import TWWC from "../../assets/img/image-5.jpg";
+import ASTP from "../../assets/img/image.jpg";
+---
+
+<section class="wrapper" id="projects">
+  <Container class="flex:columns flex:columns--large-gap">
+    <header class="flex:columns">
+      <h2 class="heading">Recent projects from my portfolio</h2>
+      <p class="paragraph--large italic">
+        Below are some highlights of design, user experience, and development
+        work that I&apos;ve done for a wide range of clients.
+      </p>
+    </header>
+    <section class="flex:wrap">
+      <Project
+        title="Alicia Stepp Photography"
+        image={ASTP}
+        url="//aliciastepp.com/"
+      />
+      <Project
+        title="Brotherly Love Real Estate"
+        image={BLRE}
+        url="//brotherlyloveproperties.com/"
+      />
+      <Project
+        title="M. Night Shyamalan Foundation"
+        image={MNSF}
+        url="//mnsfoundation.org/"
+      />
+      <Project title="Rent-a-Sim" image={RENT} url="//rentasim.co/" />
+      <Project
+        title="Tufas Boulder Lounge"
+        image={TUFA}
+        url="//tufasboulderlounge.com/"
+      />
+      <Project
+        title="Twin Waves Wellness Center"
+        image={TWWC}
+        url="//twinwaveswellness.com"
+      />
+    </section>
+  </Container>
+</section>

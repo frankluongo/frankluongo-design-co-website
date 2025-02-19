@@ -1,0 +1,8 @@
+---
+const { Element = "button", ...rest } = Astro.props;
+import "./Button.css";
+---
+
+<Element class="button" {...rest}>
+  <slot />
+</Element>
