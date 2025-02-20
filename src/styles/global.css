@@ -90,21 +90,6 @@
     font-display: swap;
   }
   /* ============================================================ */
-  /* BODY FONT: HANKEN */
-  /* ============================================================ */
-  @font-face {
-    font-family: "Hanken Grotesk";
-    src: url("/fonts/hanken/hanken-variable.ttf") format("ttf");
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: "Hanken Grotesk";
-    src: url("/fonts/hanken/hanken-italic-variable.ttf") format("ttf");
-    font-style: italic;
-    font-display: swap;
-  }
-  /* ============================================================ */
   /* CALL TO ACTION FONT: SILKA MONO */
   /* ============================================================ */
   @font-face {
