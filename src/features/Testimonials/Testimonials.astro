@@ -1,12 +1,14 @@
 ---
 import Container from "../../components/Container/Container.astro";
-import Scroller from "../../components/Scroller/Scroller.astro";
+
 import Testimonial from "../../components/Testimonial/Testimonial.astro";
 
 import Alex from "../../assets/img/alex-capozzolo.jpg";
 import KiraAndSuzanna from "../../assets/img/kira-and-suzanna.jpg";
 import Jon from "../../assets/img/jon-sanborn.jpg";
 import JonBonus from "../../assets/img/jon-easter-egg.jpg";
+
+import "./Testimonials.css";
 ---
 
 <section class="wrapper background--tint">
@@ -14,7 +16,7 @@ import JonBonus from "../../assets/img/jon-easter-egg.jpg";
     <header class="flex:columns">
       <h2 class="heading">Testimonials from past clients</h2>
     </header>
-    <Scroller>
+    <div class="testimonials">
       <Testimonial
         business="Twin Waves Wellness Center"
         client="Kira & Suzanna"
@@ -55,6 +57,6 @@ import JonBonus from "../../assets/img/jon-easter-egg.jpg";
         branding, etc, all of which Frank played a huge role in. Highly
         recommend!
       </Testimonial>
-    </Scroller>
+    </div>
   </Container>
 </section>
